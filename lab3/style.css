@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #222;
+    background-color: #f4f4f4;
+}
+
+.result-card {
+    max-width: 480px;
+    margin: 50px auto;
+    padding: 25px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 26px;
+}
+
+.result-message {
+    color: #555;
+    line-height: 1.5;
+}
+
+.account-details {
+    margin: 25px 0;
+    text-align: left;
+}
+
+.account-details p {
+    display: flex;
+    gap: 15px;
+    margin: 10px 0;
+}
+
+.account-details strong {
+    min-width: 100px;
+}
+
+.account-details span {
+    overflow-wrap: anywhere;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 16px;
+    color: white;
+    background-color: #333;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.back-button:hover {
+    background-color: black;
+}
