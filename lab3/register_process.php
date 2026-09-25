@@ -62,12 +62,15 @@ if (
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= escapeHtml($pageTitle) ?></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <main class="result-card">
-        <h1><?= escapeHtml($pageTitle) ?></h1>
-        <p class="result-message"><?= escapeHtml($statusMessage) ?></p>
+<body class="bg-light">
+    <main class="container py-5">
+        <section class="result-card card border-0 shadow-sm mx-auto">
+            <div class="card-body p-4 p-md-5 text-center">
+                <h1 class="h3 fw-bold"><?= escapeHtml($pageTitle) ?></h1>
+                <p class="result-message text-secondary"><?= escapeHtml($statusMessage) ?></p>
 
         <?php if ($showAccountDetails): ?>
             <div class="account-details">
@@ -79,7 +82,9 @@ if (
             </div>
         <?php endif; ?>
 
-        <a href="register.php" class="back-button">Back to form</a>
+                <a href="register.php" class="back-button btn btn-dark mt-3">Back to form</a>
+            </div>
+        </section>
     </main>
 </body>
 </html>
